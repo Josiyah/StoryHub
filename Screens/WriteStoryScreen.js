@@ -4,15 +4,18 @@ import { StyleSheet, Text, View, } from 'react-native';
 export default class ReadStoryScreen extends React.Component{
     render(){
         return(
-            <View style={StyleSheet.container}>
+            <View style={styles.container}>
                 <Text>Read Story</Text>
             </View>
         )
     }
 }
 
-const styles =StyleSheet.create({
+const styles = StyleSheet.create({
     container: {
-        flex: 1
-    }
-})
+      flex: 1,
+      backgroundColor: '#fff',
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+  });
