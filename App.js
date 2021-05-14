@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image } from 'react-native';
+import { StyleSheet, Text, View, Image, AppContainer} from 'react-native';
 import {createAppConatainer} from 'react-navigation';
 import {createBottomTabNavigator} from 'react-navigation-tabs'
 import WriteStoryScreen from './Screens/WriteStoryScreen'
@@ -45,3 +45,14 @@ const TabNavigator = createBottomTabNavigator({
   })
 }
 );
+
+const AppContainer = createAppContainer(TabNavigator);
+
+const styles=StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+})
